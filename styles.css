@@ -863,6 +863,70 @@ body {
 
 
 /* ===========================
+   Creative Projects Section
+   =========================== */
+.creative-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.creative-intro {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-2xl);
+    line-height: 1.8;
+}
+
+.creative-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.creative-card {
+    background-color: var(--bg-primary);
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-base);
+}
+
+.creative-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
+}
+
+.creative-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.creative-card h3 {
+    font-size: var(--font-size-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.creative-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.creative-link {
+    text-align: center;
+}
+
+.creative-link .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+/* ===========================
    Talks & Presentations Section
    =========================== */
 .talks {
