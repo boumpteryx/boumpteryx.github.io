@@ -402,7 +402,7 @@ body {
 
 .timeline-item {
     position: relative;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
     animation: fadeInLeft 0.6s ease-out;
 }
 
