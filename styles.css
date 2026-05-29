@@ -880,6 +880,14 @@ body {
 /* ===========================
    Talks & Presentations Section
    =========================== */
+.talks {
+    background-color: var(--bg-primary) !important;
+}
+
+.talks .section-title {
+    color: var(--text-primary) !important;
+}
+
 .talks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
