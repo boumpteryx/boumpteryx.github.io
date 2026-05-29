@@ -578,68 +578,53 @@ body {
 }
 
 /* ===========================
-   Skills Section
+   Certifications Section
    =========================== */
-.skills-grid {
+.certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xl);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.skill-category {
+.certification-card {
     background-color: var(--bg-primary);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-xl);
     border-radius: 12px;
     box-shadow: var(--shadow-md);
     transition: var(--transition-base);
-}
-
-.skill-category:hover {
-    box-shadow: var(--shadow-lg);
-}
-
-.skill-category h3 {
-    font-size: var(--font-size-xl);
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-md);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
 }
 
-.skill-category h3 i {
-    color: var(--primary-color);
+.certification-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
 }
 
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-xs);
+.cert-badge {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: var(--spacing-md);
 }
 
-.skill-tag {
-    background-color: var(--bg-tertiary);
+.certification-card h3 {
+    font-size: var(--font-size-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.cert-issuer {
     color: var(--text-secondary);
-    padding: 6px 16px;
-    border-radius: 20px;
     font-size: var(--font-size-sm);
     font-weight: 500;
-    transition: var(--transition-fast);
-}
-
-.skill-tag:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.skill-tag.cert {
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-.skill-tag.cert:hover {
-    background-color: var(--primary-color);
 }
 
 /* ===========================
