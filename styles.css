@@ -419,6 +419,7 @@ body {
 }
 
 .timeline-content {
+    position: relative;
     background-color: var(--bg-primary);
     padding: var(--spacing-lg);
     border-radius: 12px;
@@ -429,6 +430,22 @@ body {
 .timeline-content:hover {
     box-shadow: var(--shadow-lg);
     transform: translateX(8px);
+}
+
+.award-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: var(--font-size-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .timeline-date {
